@@ -346,5 +346,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
     }
+
+    /**
+     * This is a change
+     */
 }
 
