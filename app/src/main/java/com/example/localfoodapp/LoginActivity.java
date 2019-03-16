@@ -68,10 +68,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
-        mEmailView = findViewById(R.id.email);
+        mEmailView = findViewById(R.id.email_login);
         populateAutoComplete();
 
-        mPasswordView = findViewById(R.id.password);
+        mPasswordView = findViewById(R.id.password_login);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = findViewById(R.id.email_sign_in_button);
+        Button mEmailSignInButton = findViewById(R.id.button_login);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,8 +103,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * Click button to go to Registration page
      */
     private void registrationPage(){
-        Button registerButton = findViewById(R.id.register_button);
-        registerButton.setOnClickListener(new View.OnClickListener(){
+        Button registerBtn = findViewById(R.id.login_to_register);
+        registerBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));

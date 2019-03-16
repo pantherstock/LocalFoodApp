@@ -15,7 +15,7 @@
     <!-- Login progress -->
 
     <AutoCompleteTextView
-        android:id="@+id/email"
+        android:id="@+id/email_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -26,7 +26,7 @@
 
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -41,7 +41,7 @@
         android:singleLine="true" />
 
     <Button
-        android:id="@+id/email_sign_in_button"
+        android:id="@+id/button_login"
         style="?android:textAppearanceSmall"
         android:layout_width="195dp"
         android:layout_height="68dp"
@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/login_to_register"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,6 +70,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
         android:text="Don't have an account? Sign Up"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorAccent" />
 
 </RelativeLayout>
