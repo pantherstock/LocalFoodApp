@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:hint="Enter your Email/ID"
+        android:hint="@string/user_Id_Login"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:singleLine="true" />
@@ -48,7 +48,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="110dp"
+        android:background="@color/design_default_color_primary"
         android:text="SIGN IN"
         android:textStyle="bold" />
 
@@ -59,7 +60,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@mipmap/ic_launcher" />
 
     <Button
         android:id="@+id/register_button"
@@ -69,7 +71,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
-        android:text="Don't have an account? Sign Up"
+        android:text="Don't have an account? Sign Up Here"
         android:textColor="@color/colorAccent"/>
 
 </RelativeLayout>
